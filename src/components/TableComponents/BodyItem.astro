@@ -1,0 +1,26 @@
+---
+const {
+  id,
+  nombre,
+  tipo_de_documento,
+  documento
+} = Astro.props
+---
+
+<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+  <th class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      {nombre}
+  </th>
+  <td class="px-6 py-4">
+      {id}
+  </td>
+  <td class="px-6 py-4">
+      {tipo_de_documento}
+  </td>
+  <td class="px-6 py-4">
+      {documento}
+  </td>
+  <td class="px-6 py-4 text-right">
+      <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Ver</a>
+  </td>
+</tr>

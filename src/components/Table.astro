@@ -1,0 +1,17 @@
+---
+import TableHeader from './TableComponents/TableHeader.astro'
+import TableBody from './TableComponents/TableBody.astro'
+
+const headers = ['id','nombre', 'tipo de documento', 'documento', 'acciones']
+import { pacientes } from '../data/pacientes'
+---
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+
+        <TableHeader headers={headers}/>
+
+        <TableBody/>
+
+</div>

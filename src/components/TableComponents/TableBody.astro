@@ -1,0 +1,23 @@
+---
+import BodyItem from './BodyItem.astro'
+
+
+import { pacientes } from '../../data/pacientes'
+---
+
+<tbody>
+
+    {
+        pacientes.map(({id, nombre, tipo_de_documento, documento}) => {
+            return (
+                <BodyItem 
+                    id = {id}
+                    nombre = {nombre}
+                    tipo_de_documento = {tipo_de_documento}
+                    documento = {documento}
+                />
+            )
+        })
+    }
+
+</tbody>

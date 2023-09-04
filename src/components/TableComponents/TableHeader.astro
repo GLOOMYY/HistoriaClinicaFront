@@ -1,0 +1,30 @@
+---
+
+import HeaderItem from './HeaderItem.astro'
+
+
+//const headers = Astro.props
+const headers = ['nombre', 'id', 'tipo de documento', 'documento']
+
+
+---
+
+<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+  <tr>
+
+    {
+      headers.map((header) =>{
+        return (
+          <HeaderItem title={header}/>
+        )
+      })
+    }
+
+
+    <th scope="col" class="px-6 py-3">
+      <span class="sr-only">Actions</span>
+    </th>
+
+
+  </tr>
+</thead>
